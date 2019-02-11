@@ -1,0 +1,14 @@
+String[] recipients = new String[]{"Email Address"};  
+	        String[] bccRecipients = new String[]{"Email Address"};  
+	        String subject = request.getParameter("subject");  
+	        String messageBody = "Email : "+request.getParameter("username")+"\n"+request.getParameter("message");  
+	  
+	  		SendEmail s = new SendEmail();
+	        if(s.sendMail(recipients, bccRecipients, subject, messageBody))
+	        {
+	        	out.println("<div class='alert alert-success alert-dismissible'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a><strong>Success!</strong> Email Send Successfully.</div>");
+			}
+			else
+			{
+				out.println("<div class='alert alert-danger alert-dismissible'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a><strong>Alert!</strong> Email not Send Successfully.</div>");
+			}

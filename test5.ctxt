@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=test5
+comment1.params=values
+comment1.target=void\ sum(double[])
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+comment2.text=void\ sum2(int\ x,\ double\ ...values,int\ y,\ int\ ...values2)\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ }\r\n\ \ \ \ ALSO\ VARARGS\ METHODS\ CAN\ BE\ OVERLOADED\r\n
+numComments=3
